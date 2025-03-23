@@ -37,6 +37,9 @@ This project demonstrates object placement in AR using Swift, `SCNView` for mode
 ### Demo
 ![AR Demo Video](https://drive.google.com/file/d/1Hgf3UKIUtsIhHtCKk0hkZHQ6KdD5HrH7/view?usp=sharing)
 
+[🎬 Watch the Demo on Google Drive](https://drive.google.com/file/d/1Hgf3UKIUtsIhHtCKk0hkZHQ6KdD5HrH7/view?usp=sharing)
+
+
 ### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
@@ -44,7 +47,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 This project is licensed under the MIT License.
 
 ### Contact
-For inquiries, reach out to me at [theshivlam@gmail.com](mailto:theshivlam@gmail.com).
+For inquiries, reach out to me at [hi@shivlam.com](mailto:hi@shivlam.com).
 
 ---
 
