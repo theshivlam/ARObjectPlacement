@@ -35,7 +35,7 @@ This project demonstrates object placement in AR using Swift, `SCNView` for mode
 3. Tap the button to switch to AR mode and place the object in your environment.
 
 ### Demo
-[🎬 Watch the Demo on Google Drive](https://drive.google.com/file/d/1Hgf3UKIUtsIhHtCKk0hkZHQ6KdD5HrH7/view?usp=sharing)
+[🎬 Watch the Demo on Google Drive](https://drive.google.com/file/d/1do6cznBhmXsF2sKlCyfAhGCWKMJ2s8UV/view?usp=sharing)
 
 
 ### Contributing
