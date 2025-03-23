@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ohW-4V-zrV">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="YaR-XZ-LLA">
+            <objects>
+                <navigationController id="ohW-4V-zrV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BXd-Ax-awE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="00r-ms-u1G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exS-tQ-hjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="4"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" playing="YES" jitteringEnabled="YES" allowsCameraControl="YES" wantsMultisampling="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uci-Pa-bLO">
+                                <rect key="frame" x="0.0" y="103" width="393" height="601"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV0-jU-HFI">
+                                <rect key="frame" x="24" y="754" width="345" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mqY-PY-wne"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arkit" catalog="system" title="   AR View"/>
+                                <connections>
+                                    <action selector="arButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Abz-Au-r8J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uci-Pa-bLO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9ph-1I-koK"/>
+                            <constraint firstItem="oV0-jU-HFI" firstAttribute="top" secondItem="uci-Pa-bLO" secondAttribute="bottom" constant="50" id="EyA-e6-bVR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oV0-jU-HFI" secondAttribute="bottom" constant="20" id="Mnu-d2-5Pv"/>
+                            <constraint firstItem="oV0-jU-HFI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RZd-rO-G2Z"/>
+                            <constraint firstItem="uci-Pa-bLO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rrl-sb-X0B"/>
+                            <constraint firstItem="uci-Pa-bLO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jvl-rQ-s29"/>
+                            <constraint firstItem="oV0-jU-HFI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="xB4-3X-deW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lgZ-CS-X7z"/>
+                    <connections>
+                        <outlet property="arViewButton" destination="oV0-jU-HFI" id="30r-rE-hjF"/>
+                        <outlet property="scnView" destination="uci-Pa-bLO" id="AOH-Zq-4AK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="4"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vzo-8C-DFr">
+            <objects>
+                <viewController storyboardIdentifier="ARViewController" id="Fjz-Z0-eIv" customClass="ARViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZE-yU-Ylj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33o-nY-nYB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hmb-L0-vjW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="33o-nY-nYB" firstAttribute="leading" secondItem="Hmb-L0-vjW" secondAttribute="leading" id="OJ4-Dk-OLw"/>
+                            <constraint firstItem="33o-nY-nYB" firstAttribute="trailing" secondItem="Hmb-L0-vjW" secondAttribute="trailing" id="TjU-n6-fDT"/>
+                            <constraint firstItem="33o-nY-nYB" firstAttribute="bottom" secondItem="Hmb-L0-vjW" secondAttribute="bottom" id="e9g-9I-k25"/>
+                            <constraint firstItem="33o-nY-nYB" firstAttribute="top" secondItem="Hmb-L0-vjW" secondAttribute="top" id="hw0-iB-dcR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="33o-nY-nYB" id="dUr-Qf-VTM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2A-Jj-NUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096.9465648854962" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arkit" catalog="system" width="128" height="125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
